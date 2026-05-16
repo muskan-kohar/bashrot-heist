@@ -51,7 +51,6 @@ penalty["curl.*"]=4
 #creating sub directory in wardens directory
 mkdir -p /home/wardens/crimes
 
-
 #checking if the basher has put any command which is dangerous
 if groups "$USER" | grep -qw bashers; then
 	grep -q "PROMPT_COMMAND='history -a; /path/to/theL_Penalty.sh'" "/home/${USER}/.bashrc" || echo "PROMPT_COMMAND='history -a; /path/to/theL_Penalty'" >> "/home/${USER}/.bashrc"
