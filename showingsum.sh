@@ -1,7 +1,6 @@
 #!/bin/bash
 
 
-
 #summing up the size of each bahsers 
 awk -F '|' '{ sum[$2]+=$3 }
 
