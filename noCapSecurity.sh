@@ -36,7 +36,6 @@ real_one="link_$(( RANDOM % 6767 ))"
 ln -s "$realFile" "$BASE/$real_one"
 
 
-
 #creating 6767 simlinks to random diratories
 i=0
 while (( i < 6767 ))
